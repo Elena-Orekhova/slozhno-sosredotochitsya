@@ -1,3 +1,12 @@
+/* :root {
+  --header-title-color: #FFC2E6;
+  --title-color: #353430;
+  --subtitle-color: #353430;
+  --text-color: #353430;;
+  --main-bg-color: #FFF1F7;;
+  --accent-bg-color: #FF8DCB;
+} */
+
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,

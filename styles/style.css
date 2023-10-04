@@ -1,5 +1,189 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основная тема - темная */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  background: var(--main-bg-color, #000028);
+  color: var(--text-color, #F1B2CE);
+  padding: 10px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: minmax(calc(375px - 10px * 2), calc(767px - 10px * 2));
+}
+
+/* уголки */
+.decorated-zone::before {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid currentColor;
+  border-inline-end: 1px solid currentColor;
+  justify-self: end;
+}
+
+.decorated-zone::after {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid currentColor;
+  border-inline-start: 1px solid currentColor;
+}
+
+/* общие заголовки */
+.heading-accent_text {
+  color: var(--title-color, #FF0070);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  margin-block-end: 20px;
+}
+
+.heading-accent_bg {
+  color: var(--subtitle-color, #000028);
+  font-weight: 700;
+  background: var(--accent-bg-color, #FF0070);
+  margin-block-end: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+/* основное */
+.header {
+  color: var(--title-color, #FF0070);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content);
+}
+
+.header__decorative-element {
+  position: absolute;
+  align-items: center;
+  text-transform: uppercase;
+  inset-inline-end: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: min-content 9px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.header__decorative-element::after {
+  content: '';
+  block-size: 9px;
+  background: var(--accent-bg-color, #FF0070);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2.5px var(--accent-bg-color, #FF0070);
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: end;
+  gap: 13px;
+  margin-block: 40px 65px;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  border: none;
+  text-transform: lowercase;
+  inline-size: 70px;
+  block-size: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.header__title {
+  color: var(--header-title-color, #DB00FF);
+  text-shadow: 4px 4px 0px var(--text-shadow, #FF0070);
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-block-end: 55px;
+}
+
+.header__lead {
+  background: var(--accent-bg-color, #FF0070);
+  color: var(--subtitle-color, #000028);
+  font-weight: 700;
+  margin-block-end: 31px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.main__box:not(:last-of-type) {
+  margin-block-end: 50px;
+}
+
+.main__box-list {
+  display: grid;
+  gap: 20px;
+}
+
+.main__box-heading_acccent-bg {
+  margin-block-end: 20px;
+}
+
+.main__box-item-heading_normal {
+  color: var(--subtitle-color, #000028);
+  font-weight: 400;
+  background: var(--accent-bg-color, #FF0070);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-block-end: 10px;
+}
+
+.main__box-item-text {
+  color: var(--text-color, #F1B2CE);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main__box-item-link {
+  text-decoration: none;
+  text-shadow: 2px 1px 0px var(--text-shadow, #FF0070);
+}
+
+.main__box-images {
+  display: grid;
+  gap: 10px;
+}
+
+.main__box-images img {
+  inline-size: 100%;
+}
+
+.footer {
+  color: var(--title-color, #FF0070);
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  block-size: 647px;
+  inline-size: 100%;
+}
+
+.footer__heading {
+  color: var(--header-title-color, #DB00FF);
+  text-shadow: 2px 2px 0px var(--text-shadow, #FF0070);
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 82.5%;
+  justify-self: center;
+  align-self: center;
 }
