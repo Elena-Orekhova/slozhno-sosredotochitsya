@@ -47,11 +47,13 @@
       <h1 class="header__title">
         no focus
       </h1>
-      <p class="header__lead heading-accent_bg">
-        Что делать, когда не можешь делать ничего
-        <br>Или почему нам так сложно сконцентрироваться, 
-        особенно когда очень надо
-      </p>
+      <div class="header__wrapper-lead">
+        <p class="header__lead heading-accent_bg">
+          Что делать, когда не можешь делать ничего
+          <br>Или почему нам так сложно сконцентрироваться, 
+          особенно когда очень надо
+        </p>
+      </div>
     </header>
     <main class="main">
       <article class="main__box">
@@ -92,7 +94,7 @@
         <h3 class="main__box-heading heading-accent_text">
           Что снижает концентрацию внимания?
         </h3>
-        <ul class="main__box-list">
+        <ul class="main__box-list wrapper-grid">
           <li class="main__box-item">
             <h4 class="main__box-item-heading heading-accent_bg">
               Многозадачность
@@ -197,16 +199,26 @@
           </li>
         </ul>
       </article>
-      <article class="main__box">
-        <h3 class="main__box-heading heading-accent_bg">
+      <article class="main__box-image">
+        <h3 class="main__box-heading heading-accent_bg headinh-image-tabs">
           А можно в картинках?
         </h3>
-        <div class="main__box-images">
-          <img src="./images/sunset.png" alt="Ярко розовый закат с облаками. Вид на море и горы">
-          <img src="./images/ice-cream.png" alt="Мороженое с эмоджи под сливками, фруктами и ягодами, зонтиком">
-          <img src="./images/tape.png" alt="Кассета от плеера на фиолетовом фоне в окружении облаков, окон и папок">
-          <img src="./images/books.png" alt="Стопка из книг. Наверху стоит чашка кофе">
-          <img src="./images/street.png" alt="Пустая улица с фиолетовыми домами и деревьями">
+        <div class="main__box-galery">
+          <img loading="lazy" src="./images/sunset.png" 
+          alt="Ярко розовый закат с облаками. Вид на море и горы"
+          class="main__box-galery_sunset">
+          <img loading="lazy" src="./images/ice-cream.png" 
+          alt="Мороженое с эмоджи под сливками, фруктами и ягодами, зонтиком"
+          class="main__box-galery_ice-cream">
+          <img loading="lazy" src="./images/tape.png" 
+          alt="Кассета от плеера на фиолетовом фоне в окружении облаков, окон и папок"
+          class="main__box-galery_tape">
+          <img loading="lazy" src="./images/books.png" 
+          alt="Стопка из книг. Наверху стоит чашка кофе"
+          class="main__box-galery_books">
+          <img loading="lazy" src="./images/street.png" 
+          alt="Пустая улица с фиолетовыми домами и деревьями"
+          class="main__box-galery_street">
         </div>
       </article>
     </main>
