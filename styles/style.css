@@ -1,6 +1,6 @@
 /* Основная тема - темная */
 
-/* mobil */
+/* mobile */
 .page {
   position: relative;
   z-index: -1;
@@ -265,10 +265,18 @@
     inset-block-start: 20px;
   }
 
+  .header__theme-menu-list {
+    margin-block: 147px 173px;
+  }
+
   .header__title {
     position: relative;
     inline-size: calc(100% + 20px * 2);
     inset-inline-end: 20px;
+  }
+
+  .header__wrapper-lead {
+    margin-block: 162px 138px;
   }
 
   .main {
@@ -355,7 +363,7 @@
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: 1fr;
     justify-content: center;
-    margin-block-start: 0;
+    margin-block: 0 273px;
   }
 
   .header__title {
@@ -366,7 +374,7 @@
   .header__wrapper-lead {
     grid-column: 1/4;
     grid-row: 3/4;
-    align-self: start;
+    margin-block: 114px 89px;
   }
 
   .wrapper-grid {
