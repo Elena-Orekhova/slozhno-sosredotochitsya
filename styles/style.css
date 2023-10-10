@@ -13,7 +13,7 @@
   background: var(--main-bg-color, #000028);
   background-image: var(--header-bg-image);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 375px;
@@ -96,6 +96,7 @@
   grid-template-rows: repeat(3, 1fr);
   justify-items: end;
   gap: 10px;
+  margin-block: 40px 65px;
 }
 
 .header__theme-menu-button {
@@ -115,9 +116,12 @@
   outline: 1px solid var(--color-button-transparent);
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid currentColor;
-  outline: none;
 } 
 
 .header__theme-menu-button_active {
@@ -137,6 +141,7 @@
   display: grid;
   grid-template-columns: auto minmax(calc(375px - 10px * 2), 50%);
   grid-template-rows: min-content;
+  margin-block: 55px 31px;
 }
 
 .header__lead {
@@ -199,8 +204,11 @@
   outline: none;
 }
 
-.main__box-item-link:focus-visible {
+.main__box-item-link:focus {
   outline: none;
+}
+
+.main__box-item-link:focus-visible {
   outline: 1px solid currentColor;
 }
 
