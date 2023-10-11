@@ -220,11 +220,16 @@
   gap: 10px;
 }
 
+.main__box-galery picture {
+  display: flex;  
+  /*обертка picture добавляет контейнеру несколько лишних пикселей (расхождения с макетом)
+  display:flex добавлен для того, чтобы сделать контейнер по размеру изображения*/
+}
+
 .main__box-galery img {
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  block-size: 100%;
 }
 
 .footer {
