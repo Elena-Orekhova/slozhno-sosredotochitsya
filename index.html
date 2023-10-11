@@ -206,21 +206,56 @@
           А можно в картинках?
         </h3>
         <div class="main__box-galery">
-          <img loading="lazy" src="./images/sunset.png" 
-          alt="Ярко розовый закат с облаками. Вид на море и горы"
-          class="main__box-galery_sunset">
-          <img loading="lazy" src="./images/ice-cream.png" 
-          alt="Мороженое с эмоджи под сливками, фруктами и ягодами, зонтиком"
-          class="main__box-galery_ice-cream">
-          <img loading="lazy" src="./images/tape.png" 
-          alt="Кассета от плеера на фиолетовом фоне в окружении облаков, окон и папок"
-          class="main__box-galery_tape">
-          <img loading="lazy" src="./images/books.png" 
-          alt="Стопка из книг. Наверху стоит чашка кофе"
-          class="main__box-galery_books">
-          <img loading="lazy" src="./images/street.png" 
-          alt="Пустая улица с фиолетовыми домами и деревьями"
-          class="main__box-galery_street">
+          <picture class="main__box-galery_sunset">
+            <source srcset="./images/sunset.avif 1x, ./images/sunset-2x.avif 2x, ./images/sunset-3x.avif 3x"
+            type="image/avif">
+            <source srcset="./images/sunset.webp 1x, ./images/sunset-2x.webp 2x, ./images/sunset-3x.webp 3x"
+            type="image/webp">
+            <img loading="lazy" 
+            src="./images/sunset.png"
+            srcset="./images/sunset.png 1x, ./images/sunset-2x.png 2x, ./images/sunset-3x.png 3x" 
+            alt="Ярко розовый закат с облаками. Вид на море и горы">
+          </picture>
+          <picture class="main__box-galery_ice-cream">
+            <source srcset="./images/ice-cream.avif 1x, ./images/ice-cream-2x.avif 2x, ./images/ice-cream-3x.avif 3x"
+            type="image/avif">
+            <source srcset="./images/ice-cream.webp 1x, ./images/ice-cream-2x.webp 2x, ./images/ice-cream-3x.webp 3x"
+            type="image/webp">
+            <img loading="lazy"
+            src="./images/ice-cream.png"
+            srcset="./images/ice-cream.png 1x, ./images/ice-cream-2x.png 2x, ./images/ice-cream-3x.png 3x" 
+            alt="Мороженое с эмоджи под сливками, фруктами и ягодами, зонтиком">
+          </picture>
+          <picture class="main__box-galery_tape">
+            <source srcset="./images/tape.avif 1x, ./images/tape-2x.avif 2x, ./images/tape-3x.avif 3x"
+            type="image/avif">
+            <source srcset="./images/tape.webp 1x, ./images/tape-2x.webp 2x, ./images/tape-3x.webp 3x"
+            type="image/webp">
+            <img loading="lazy"
+            src="./images/tape.png"
+            srcset="./images/tape.png 1x, ./images/tape-2x.png 2x, ./images/tape-3x.png 3x" 
+            alt="Кассета от плеера на фиолетовом фоне в окружении облаков, окон и папок">
+          </picture>
+          <picture class="main__box-galery_books">
+            <source srcset="./images/books.avif 1x, ./images/books-2x.avif 2x, ./images/books-3x.avif 3x"
+            type="image/avif">
+            <source srcset="./images/books.webp 1x, ./images/books-2x.webp 2x, ./images/books-3x.webp 3x"
+            type="image/webp">
+            <img loading="lazy"
+            src="./images/books.png"
+            srcset="./images/books.png 1x, ./images/books-2x.png 2x, ./images/books-3x.png 3x" 
+            alt="Стопка из книг. Наверху стоит чашка кофе">
+          </picture>
+          <picture class="main__box-galery_street">
+            <source srcset="./images/street.avif 1x, ./images/street-2x.avif 2x, ./images/street-3x.avif 3x"
+            type="image/avif">
+            <source srcset="./images/street.webp 1x, ./images/street-2x.webp 2x, ./images/street-3x.webp 3x"
+            type="image/webp">
+            <img loading="lazy"
+            src="./images/street.png"
+            srcset="./images/street.png 1x, ./images/street-2x.png 2x, ./images/street-3x.png 3x"  
+            alt="Пустая улица с фиолетовыми домами и деревьями">
+          </picture>
         </div>
       </section>
     </main>

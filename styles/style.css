@@ -16,8 +16,6 @@
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
 }
 
 /* уголки */
@@ -96,7 +94,7 @@
   grid-template-rows: repeat(3, 1fr);
   justify-items: end;
   gap: 10px;
-  margin-block: 40px 65px;
+  margin-block: 40px 65px; /*10.667vi 17.334vi*/
 }
 
 .header__theme-menu-button {
@@ -106,10 +104,13 @@
   line-height: 100%;
   text-transform: lowercase;
   background: transparent;
-  cursor: pointer;
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
+}
+
+.header__theme-menu-button:disabled {
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -140,13 +141,11 @@
 .header__wrapper-lead {
   display: grid;
   grid-template-columns: auto minmax(calc(375px - 10px * 2), 50%);
-  grid-template-rows: min-content;
-  margin-block: 55px 31px;
+  margin-block: 55px 31px; /*14.667vi 8.267vi*/
 }
 
 .header__lead {
   grid-column-start: 2;
-  border: 1px solid var(--accent-bg-color, #FF0070);
   font-weight: 700;
   font-size: var(--main-font-size, 18px);
   line-height: 130%;
@@ -258,6 +257,7 @@
   .footer {
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding: 20px;
+    min-block-size: 1024px;
   }
 
  .header__decorative-element {
@@ -266,7 +266,7 @@
   }
 
   .header__theme-menu-list {
-    margin-block: 147px 173px;
+    margin-block: 147px 173px; /*19.141vi 22.526vi*/
   }
 
   .header__title {
@@ -276,7 +276,7 @@
   }
 
   .header__wrapper-lead {
-    margin-block: 162px 138px;
+    margin-block: 162px 138px; /*21.094vi 17.969vi*/
   }
 
   .main {
@@ -341,7 +341,9 @@
   .header {
     grid-template-columns: min-content 1fr min-content;
     grid-template-rows: min-content 1fr 1fr min-content;
+    min-block-size: 768px;
   }
+  
   .decorated-zone::before {
     grid-column: 3/4;
     grid-row: 1/2;
@@ -363,7 +365,7 @@
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: 1fr;
     justify-content: center;
-    margin-block: 0 273px;
+    margin-block: 0 273px; /*0 26.66vi*/
   }
 
   .header__title {
@@ -374,11 +376,15 @@
   .header__wrapper-lead {
     grid-column: 1/4;
     grid-row: 3/4;
-    margin-block: 114px 89px;
+    margin-block: 114px 89px; /*11.132vi 8.691vi*/
   }
 
   .wrapper-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    min-block-size: 768px;
   }
 
   .footer__title {
